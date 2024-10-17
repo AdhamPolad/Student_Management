@@ -1,0 +1,15 @@
+12.10.2024 02:05:57 - INFO - process Bitdi
+12.10.2024 02:10:31 - ERROR - Age yerine herf yazmaq olmaz!
+12.10.2024 02:10:31 - INFO - process Bitdi
+12.10.2024 02:13:12 - ERROR -    at ConsoleApp1.Program.AddStudents(StudentService studentService) in C:\Users\aser\Desktop\c#\homework\homewrok18 excel\ConsoleApp1\ConsoleApp1\Program.cs:line 89
+   at ConsoleApp1.Program.Main(String[] args) in C:\Users\aser\Desktop\c#\homework\homewrok18 excel\ConsoleApp1\ConsoleApp1\Program.cs:line 35 - Age yerine herf yazmaq olmaz!
+12.10.2024 02:13:13 - INFO - process Bitdi
+12.10.2024 02:14:02 - ERROR -    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at ConsoleApp1.Program.AddStudents(StudentService studentService) in C:\Users\aser\Desktop\c#\homework\homewrok18 excel\ConsoleApp1\ConsoleApp1\Program.cs:line 76
+   at ConsoleApp1.Program.Main(String[] args) in C:\Users\aser\Desktop\c#\homework\homewrok18 excel\ConsoleApp1\ConsoleApp1\Program.cs:line 35 - The input string 'q' was not in a correct format.
+12.10.2024 02:14:02 - INFO - process Bitdi
+12.10.2024 02:15:08 - INFO - process Bitdi
+16.10.2024 17:50:04 - INFO - process is end
+16.10.2024 19:11:16 - INFO - process is end
+17.10.2024 17:43:06 - INFO - process is end
