@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Models
 {
-    internal class Student 
+    public class Student 
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -22,7 +22,14 @@ namespace ConsoleApp1.Models
             Age = age;
         }
 
+        public Student(string name, string surName, int age)
+        {
+            Name = name;
+            SurName = surName;
+            Age = age;
+        }
 
-        
+
+
     }
 }

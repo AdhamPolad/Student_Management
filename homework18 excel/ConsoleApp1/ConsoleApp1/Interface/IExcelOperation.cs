@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Interface
 {
-    internal interface IExcelOperation
+    public interface IExcelOperation
     {
         void AddRecord(Student student);
         List<Student>? ReadRecord();

@@ -13,3 +13,48 @@
 16.10.2024 17:50:04 - INFO - process is end
 16.10.2024 19:11:16 - INFO - process is end
 17.10.2024 18:21:50 - INFO - process is end
+22.10.2024 20:08:29 - INFO - process is end
+22.10.2024 22:38:10 - INFO - process is end
+22.10.2024 23:03:48 - ERROR -    at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at StudentManagementWithSql.Repository.StudentRepository.AddRecord(Student student) in C:\Users\aser\Desktop\Student Management\homework18 excel\ConsoleApp1\StudentManagementWithSql\Repository\StudentRepository.cs:line 29
+   at StudentManagementWithSql.Service.StudentService.AddStudent(Student student) in C:\Users\aser\Desktop\Student Management\homework18 excel\ConsoleApp1\StudentManagementWithSql\Service\StudentService.cs:line 22
+   at StudentManagementWithSql.Program.AddStudents(StudentService studentService) in C:\Users\aser\Desktop\Student Management\homework18 excel\ConsoleApp1\StudentManagementWithSql\Program.cs:line 104
+   at StudentManagementWithSql.Program.Main(String[] args) in C:\Users\aser\Desktop\Student Management\homework18 excel\ConsoleApp1\StudentManagementWithSql\Program.cs:line 32 - The variable name '@Name' has already been declared. Variable names must be unique within a query batch or stored procedure.
+22.10.2024 23:07:09 - ERROR -    at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at StudentManagementWithSql.Repository.StudentRepository.UpdateRecord(Int32 id, Student student) in C:\Users\aser\Desktop\Student Management\homework18 excel\ConsoleApp1\StudentManagementWithSql\Repository\StudentRepository.cs:line 66
+   at StudentManagementWithSql.Service.StudentService.UpdateStudents(Int32 id, Student student) in C:\Users\aser\Desktop\Student Management\homework18 excel\ConsoleApp1\StudentManagementWithSql\Service\StudentService.cs:line 37
+   at StudentManagementWithSql.Program.UpdateStudents(StudentService studentService) in C:\Users\aser\Desktop\Student Management\homework18 excel\ConsoleApp1\StudentManagementWithSql\Program.cs:line 80
+   at StudentManagementWithSql.Program.Main(String[] args) in C:\Users\aser\Desktop\Student Management\homework18 excel\ConsoleApp1\StudentManagementWithSql\Program.cs:line 38 - The variable name '@Name' has already been declared. Variable names must be unique within a query batch or stored procedure.
+22.10.2024 23:08:12 - ERROR -    at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at StudentManagementWithSql.Repository.StudentRepository.UpdateRecord(Int32 id, Student student) in C:\Users\aser\Desktop\Student Management\homework18 excel\ConsoleApp1\StudentManagementWithSql\Repository\StudentRepository.cs:line 66
+   at StudentManagementWithSql.Service.StudentService.UpdateStudents(Int32 id, Student student) in C:\Users\aser\Desktop\Student Management\homework18 excel\ConsoleApp1\StudentManagementWithSql\Service\StudentService.cs:line 37
+   at StudentManagementWithSql.Program.UpdateStudents(StudentService studentService) in C:\Users\aser\Desktop\Student Management\homework18 excel\ConsoleApp1\StudentManagementWithSql\Program.cs:line 80
+   at StudentManagementWithSql.Program.Main(String[] args) in C:\Users\aser\Desktop\Student Management\homework18 excel\ConsoleApp1\StudentManagementWithSql\Program.cs:line 38 - The variable name '@Name' has already been declared. Variable names must be unique within a query batch or stored procedure.
+22.10.2024 23:19:41 - ERROR - Age yerine herf yazmaq olmaz!
+22.10.2024 23:19:50 - INFO - Proccess is end.......
+22.10.2024 23:23:00 - INFO - Proccess is end.......
+22.10.2024 23:23:34 - INFO - process is end

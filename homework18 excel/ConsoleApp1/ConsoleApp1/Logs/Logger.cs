@@ -2,7 +2,7 @@
 
 namespace ConsoleApp1.Logger
 {
-    public class Loggers
+    public class Loggers : Interface.ILogger
     {
         private readonly string _filePath;
         private string _path;
@@ -31,6 +31,14 @@ namespace ConsoleApp1.Logger
             using( StreamWriter writer = new StreamWriter(_path, true))
             {
                 writer.WriteLine($"{DateTime.Now} - {LogType.ERROR} - {exp.StackTrace} - {exp.Message}");
+            }
+        }
+
+        public void LogError(string message)
+        {
+            using (StreamWriter writer = new StreamWriter(_path, true))
+            {
+                writer.WriteLine($"{DateTime.Now} - {LogType.ERROR} - {message}");
             }
         }
         public void LogInfo(string message)
